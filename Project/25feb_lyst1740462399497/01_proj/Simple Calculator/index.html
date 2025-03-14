@@ -15,9 +15,6 @@
       placeholder="enter your numbers with operators"><br>
     <div id="oprator">
       <button id="sub" style="font-size: x-large; margin-top: 18px;">Submit</button>
-      <!-- <button>-</button>
-      <button>*</button>
-      <button>/</button> -->
       <h3 id="result"></h3>
     </div>
     <script>
@@ -25,9 +22,9 @@
       const result = document.getElementById("result");
 
       submit.addEventListener("click", function () {
-          const userInput = document.getElementById("input").value;  // Get the latest value
+          const userInput = document.getElementById("input").value; 
           try {
-              result.innerText = eval(userInput);  // Evaluate and display result
+              result.innerText = eval(userInput);
           } catch (error) {
               result.innerText = "Invalid Expression!";
           }
