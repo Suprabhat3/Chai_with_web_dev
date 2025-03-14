@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div style="text-align: center; margin-top: 100px; font-size: xx-large; ">
+
+    <h1>Calculater</h1>
+    <input id="input" style="height: 40px; width: 300px; border-radius: 10px;" type="text"
+      placeholder="enter your numbers with operators"><br>
+    <div id="oprator">
+      <button id="sub" style="font-size: x-large; margin-top: 18px;">Submit</button>
+      <!-- <button>-</button>
+      <button>*</button>
+      <button>/</button> -->
+      <h3 id="result"></h3>
+    </div>
+    <script>
+      const submit = document.getElementById("sub");
+      const result = document.getElementById("result");
+
+      submit.addEventListener("click", function () {
+          const userInput = document.getElementById("input").value;  // Get the latest value
+          try {
+              result.innerText = eval(userInput);  // Evaluate and display result
+          } catch (error) {
+              result.innerText = "Invalid Expression!";
+          }
+      });
+  </script>
+</body>
+
+</html>
