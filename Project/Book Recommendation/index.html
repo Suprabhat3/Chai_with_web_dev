@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Recommendations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Book Recommendations</h1>
+
+  <div class="categories">
+    <button class="category-btn active" onclick="filterBooks('all')">All</button>
+    <button class="category-btn" onclick="filterBooks('self-help')">Self Help</button>
+    <button class="category-btn" onclick="filterBooks('fiction')">Fiction</button>
+    <button class="category-btn" onclick="filterBooks('biography')">Biography</button>
+    <button class="category-btn" onclick="filterBooks('business')">Business</button>
+  </div>
+  <div class="books-container" id="booksContainer"></div>
+  <footer class="site-footer">
+    <p><b>Made by IIMT student's in 2025</b></p>
+</footer>
+</body>
+<script src="script.js"></script>
+
+</html>
